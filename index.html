@@ -29,7 +29,7 @@
   }
   .profile_image{
    width:480px;
-   height:480px;
+   max-width:100%;
    border-radius:50%;
 }
 .f_100{
@@ -80,6 +80,12 @@ footer{
   border-top:1px solid #c7c7c7;
   padding:30px
 }
+
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+} */
 </style>
   <body>
   
@@ -98,7 +104,7 @@ footer{
 
 </div>
 
-<div class="container d-flex align-items-center justify-content-center" style="min-height:60vh;">
+<div class="container d-flex align-items-center justify-content-center">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="mask">
@@ -107,22 +113,27 @@ footer{
       </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12">
-      <div style="width:500px;">
-        <div class="px-3"><h1 class="f_100">Hello</h1></div>
-        <div class="f_22 px-3 mt-3 mb-1" style="font-weight: 600;">A Bit About Me</div>
-        <p class="px-3">I am a UI/UX designer who is passionate about creating attractive, user-friendly designs. I believe in the power of design to solve problems and create meaningful experiences. Click here to learn more about my work and experience.</p>
-  
-        <div class="d-flex justify-content-between px-3">
-          <div class="circle yellow">
-            Resume
-          </div>
-          <div class="circle red">
-            Projects
-          </div>
-          <div class="circle cyan">
-            Contact
-          </div>
+      <div class="px-3"><h1 class="f_100">Hello</h1></div>
+      <div class="f_22 px-3 mt-3 mb-1" style="font-weight: 600;">A Bit About Me</div>
+      <p class="px-3">I am a UI/UX designer who is passionate about creating attractive, user-friendly designs. I believe in the power of design to solve problems and create meaningful experiences. Click here to learn more about my work and experience.</p>
+
+      <div class="justify-content-between px-3">
+        <div class="circle yellow mb-3">
+          Resume
         </div>
+        <div class="circle red mb-3">
+          Projects
+        </div>
+        <div class="circle cyan mb-3">
+          Contact
+        </div>
+      </div>
+      <div class="d-none" style="width:500px;max-width:100%">
+        
+        
+        
+  
+       
       </div>
    
     </div>
